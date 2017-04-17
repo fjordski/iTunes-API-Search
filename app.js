@@ -13,7 +13,7 @@ $('#button').click(function() {
       $.getJSON('https://itunes.apple.com/search?term=' + encodeURI(search), function(data) {
           let artistId = data.results[0].artistId;
 
-          //get first album from artist
+          //append albums to select
           $.getJSON('https://itunes.apple.com/lookup?id=' + artistId + '&entity=album', function(data) {
 
               let collectionIds = [];
