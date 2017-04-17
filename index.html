@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iTunes Album Search</title>
+	</head>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<body>
+		<style>
+			.Aligner {
+		height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.wrapper {
+		border: black solid 1px;
+		margin: 3em;
+		padding: 1em;
+		}
+		#albums {
+		display: none;
+		}
+		</style>
+		<div class="container Aligner">
+			<div class="Aligner-item">
+				<h1 class="text-center">
+				Artist Album Preview!
+				</h1>
+				<div class="text-center">
+					<input type="text" id="search" placeholder="search for an artist" class="text-center">
+					<button id="button">
+					search
+					</button>
+				</div>
+				<div id="albums">
+					<p class="text-center" style="margin-top:1em;">
+						Choose an album!
+					</p>
+					<select id="albumSelect">
+						
+					</select>
+				</div>
+				
+				<div id="results"></div>
+				
+			</div>
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="app.js" type="text/javascript"></script>	
+	</body>
+</html>
